@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', git 'https://github.com/brynpryl0426/sample.git'
+                git 'https://github.com/brynpryl0426/sample.git'
             }
         }
         stage('Build') {
