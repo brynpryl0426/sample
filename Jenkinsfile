@@ -2,6 +2,11 @@
 pipeline {
     agent any
     stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/brynpryl0426/sample.git'
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building..'
