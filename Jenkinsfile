@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         // Define the Maven tool with the name "M3"
-        maven 'M3'
+        maven 'Maven'
     }
     stages {
         stage('Checkout') {
