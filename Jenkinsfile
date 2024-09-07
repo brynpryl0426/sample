@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    tools {
+        // Define the Maven tool with the name "M3"
+        maven 'M3'
+    }
     stages {
         stage('Checkout') {
             steps {
